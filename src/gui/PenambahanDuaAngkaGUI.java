@@ -165,6 +165,11 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
         });
 
         keluarbtn.setText("Keluar");
+        keluarbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                keluarbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -245,6 +250,11 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
          hasilTF.setText("");
          angkapertamaTF.requestFocus();
     }//GEN-LAST:event_hapusbtnActionPerformed
+
+    private void keluarbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarbtnActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_keluarbtnActionPerformed
 
     /**
      * @param args the command line arguments
