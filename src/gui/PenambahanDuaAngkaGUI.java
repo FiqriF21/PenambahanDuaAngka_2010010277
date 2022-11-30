@@ -31,13 +31,13 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        angkapertamaTF = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        angkakeduaTF = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        hasilTF = new javax.swing.JTextField();
         tambahbtn = new javax.swing.JButton();
         hapusbtn = new javax.swing.JButton();
         keluarbtn = new javax.swing.JButton();
@@ -61,9 +61,9 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         jLabel1.setText("Angka Pertama");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        angkapertamaTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                angkapertamaTFActionPerformed(evt);
             }
         });
 
@@ -75,7 +75,7 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField1)
+                .addComponent(angkapertamaTF)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -84,7 +84,7 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(angkapertamaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
         );
 
@@ -92,9 +92,9 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         jLabel2.setText("Angka Kedua");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        angkakeduaTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                angkakeduaTFActionPerformed(evt);
             }
         });
 
@@ -106,7 +106,7 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addGap(33, 33, 33)
-                .addComponent(jTextField2)
+                .addComponent(angkakeduaTF)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -115,7 +115,7 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(angkakeduaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
         );
 
@@ -123,9 +123,9 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         jLabel3.setText("Hasil");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        hasilTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                hasilTFActionPerformed(evt);
             }
         });
 
@@ -137,7 +137,7 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addGap(92, 92, 92)
-                .addComponent(jTextField3)
+                .addComponent(hasilTF)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -146,11 +146,16 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
                 .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hasilTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21))
         );
 
         tambahbtn.setText("Tambah");
+        tambahbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tambahbtnActionPerformed(evt);
+            }
+        });
 
         hapusbtn.setText("Hapus");
 
@@ -205,17 +210,28 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void angkapertamaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkapertamaTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_angkapertamaTFActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void angkakeduaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_angkakeduaTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_angkakeduaTFActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void hasilTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_hasilTFActionPerformed
+
+    private void tambahbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahbtnActionPerformed
+        // TODO add your handling code here:
+        if(angkapertamaTF.getText().equals("") || angkakeduaTF.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Salah satu input tidak boleh kosong");
+       } else {
+           int angkapertama = Integer.valueOf(angkapertamaTF.getText());
+            int angkakedua = Integer.valueOf(angkakeduaTF.getText());
+            int hasil = angkapertama + angkakedua;
+            hasilTF.setText(Integer.toString(hasil));
+    }//GEN-LAST:event_tambahbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,7 +269,10 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField angkakeduaTF;
+    private javax.swing.JTextField angkapertamaTF;
     private javax.swing.JButton hapusbtn;
+    private javax.swing.JTextField hasilTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -262,9 +281,6 @@ public class PenambahanDuaAngkaGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JButton keluarbtn;
     private javax.swing.JButton tambahbtn;
     // End of variables declaration//GEN-END:variables
